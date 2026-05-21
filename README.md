@@ -1,49 +1,49 @@
 # Memo — 桌面便签
 
-A translucent, always-available desktop memo app built with Python + tkinter. Stays on your desktop, hides when you work, comes back with a hotkey.
+用 Python + tkinter 写的半透明桌面备忘录，常驻桌面，工作时自动隐藏，快捷键呼出。
 
-## Features
+## 功能
 
-- **Translucent window** — semi-transparent, sits on your desktop like a widget
-- **Always available** — `Ctrl + Shift + M` to show/hide instantly
-- **Todo list with checkboxes** — check off items, they animate and move to "Done"
-- **Two tabs** — Active / Completed, switch at the top
-- **Drag & resize** — drag by title bar, resize by bottom-right corner
-- **Auto-save** — saves on hide/close, restores on launch
-- **Zero dependencies** — only Python standard library
+- **半透明窗口** — 透明度可调，像桌面小组件一样
+- **随时呼出** — `Ctrl + Shift + M` 一键显示/隐藏
+- **待办清单** — 每条带复选框，勾选后动画划掉并移入"已完成"
+- **双标签页** — 顶部切换「待办事项」和「已完成」
+- **拖拽缩放** — 标题栏拖拽移动，右下角 `◢` 缩放窗口
+- **自动保存** — 关闭/隐藏时自动保存，启动时自动恢复
+- **零依赖** — 仅使用 Python 标准库，无需安装任何第三方包
 
-## Quick Start
+## 快速开始
 
 ```bash
 python memo.py
 ```
 
-Requires Python 3.7+. No pip install needed.
+需要 Python 3.7 及以上，不需要 pip install。
 
-## Usage
+## 使用说明
 
-| Action | How |
-|--------|-----|
-| Add task | Type in the input bar, press Enter or click ＋ |
-| Complete task | Click the checkbox |
-| Switch tabs | Click `[待办事项]` / `[已完成 N]` |
-| Move window | Drag the title bar |
-| Resize | Drag the bottom bar or bottom-right corner `◢` |
-| Hide window | Click `✕` |
-| Show window | `Ctrl + Shift + M` |
-| Reset position | `Ctrl + R` |
-| Clear list | Click `清空` button |
-| Fully quit | Right-click title bar → `彻底退出` |
+| 操作 | 方法 |
+|------|------|
+| 添加待办 | 输入框打字，回车或点「＋」 |
+| 完成待办 | 点击复选框 |
+| 切换标签 | 点击「[ 待办事项 ]」/「[ 已完成 N ]」 |
+| 移动窗口 | 拖拽标题栏 |
+| 缩放窗口 | 拖拽底部条或右下角 `◢` |
+| 隐藏窗口 | 点击 `✕` |
+| 显示窗口 | `Ctrl + Shift + M` |
+| 重置位置 | `Ctrl + R` |
+| 清空列表 | 底部「清空」按钮 |
+| 彻底退出 | 右键标题栏 →「彻底退出」 |
 
-## File Structure
+## 文件说明
 
 ```
 memo-app/
-├── memo.py          # the app (single file)
-├── memo_data.json   # your data (auto-generated)
+├── memo.py          # 主程序（单文件）
+├── memo_data.json   # 数据文件（自动生成）
 └── README.md
 ```
 
-## License
+## 许可
 
 MIT
